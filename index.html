@@ -7,15 +7,48 @@
   </head>
   <body class="">
     <nav
-      class="dark:bg-[#100420] bg-white w-full flex justify-between items-center p-4"
+      class="dark:bg-[#100420] bg-white w-full flex justify-between items-center p-4 lg:px-20 lg:py-8 shadow"
     >
-      <div>
-        <img src="./assets/dark/hamburger-dark.svg" class="" alt="" />
+      <div id="left" class="lg:hidden">
+        <img
+          src="./assets/dark/hamburger-dark.svg"
+          class="hidden dark:block lg:hidden"
+          alt=""
+        />
+
+        <img
+          src="./assets/light/hamburger-light.svg"
+          class="dark:hidden lg:hidden"
+          alt=""
+        />
       </div>
-      <div>
-        <img src="./assets/dark/logo-dark.svg" class="" alt="" />
+
+      <div
+        id="left-desktop"
+        class="hidden lg:flex items-center space-x-5 text-black:"
+      >
+        <p>Home</p>
+        <p>Portfolio</p>
+        <p>Services</p>
+        <p>Career</p>
       </div>
-      <div>
+
+      <div id="center">
+        <img
+          src="./assets/dark/logo-dark.svg"
+          class="hidden dark:block"
+          alt="logo"
+        />
+        <img
+          src="./assets/light/logo-light.svg"
+          class="dark:hidden"
+          alt="logo"
+        />
+      </div>
+
+      <div id="right-desktop" class="flex gap-10 items-center">
+        <img src="./assets/light/Person.svg" class="hidden lg:block" alt="">
+        <img src="./assets/light/shopping-cart.svg" class="hidden lg:block" alt="">
         <img src="./assets/search-normal.svg" class="" alt="" />
       </div>
     </nav>
