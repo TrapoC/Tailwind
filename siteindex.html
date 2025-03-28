@@ -25,23 +25,25 @@
     />
   </head>
   <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-    <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg">
+    <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg md:max-w-2xl">
       <!-- Image Section -->
       <div class="w-full">
         <img
           src="./recipe-page-main/assets/images/image-omelette.jpeg"
           alt="Omelette"
-          class="w-full rounded-lg"
+          class="w-full rounded-lg md:h-64 md:object-cover"
         />
       </div>
 
       <!-- Title Section -->
-      <h1 class="text-4xl font-young-serif text-gray-800 mt-6">
+      <h1
+        class="text-4xl font-young-serif text-gray-800 mt-6 text-center md:text-left"
+      >
         Simple Omelette Recipe
       </h1>
 
       <!-- Description Section -->
-      <p class="text-gray-600 font-young-serif mt-4">
+      <p class="text-gray-600 font-young-serif mt-4 text-center md:text-left">
         An easy and quick dish, perfect for any meal. This classic omelette
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
@@ -49,7 +51,11 @@
 
       <!-- Preparation Time Section -->
       <div class="bg-rose-50 p-4 rounded-lg mt-6">
-        <h2 class="text-lg font-young-serif text-rose-800">Preparation time</h2>
+        <h2
+          class="text-lg font-young-serif text-rose-800 text-center md:text-left"
+        >
+          Preparation time
+        </h2>
         <ul class="list-disc list-inside text-gray-600 font-young-serif mt-2">
           <li>
             <span class="font-bold">Total:</span> Approximately 10 minutes
@@ -61,7 +67,11 @@
 
       <!-- Ingredients Section -->
       <div class="mt-6">
-        <h2 class="text-2xl font-young-serif text-gray-800">Ingredients</h2>
+        <h2
+          class="text-2xl font-young-serif text-gray-800 text-center md:text-left"
+        >
+          Ingredients
+        </h2>
         <ul class="list-disc list-outside text-gray-600 font-young-serif mt-2">
           <li class="ml-5">2-3 large eggs</li>
           <li class="ml-5">Salt, to taste</li>
@@ -75,7 +85,11 @@
 
       <!-- Instructions Section -->
       <div class="mt-6">
-        <h2 class="text-2xl font-young-serif text-gray-800">Instructions</h2>
+        <h2
+          class="text-2xl font-young-serif text-gray-800 text-center md:text-left"
+        >
+          Instructions
+        </h2>
         <ol
           class="list-decimal list-inside text-gray-600 font-young-serif mt-2 space-y-2"
         >
@@ -113,30 +127,72 @@
 
       <!-- Nutrition Section -->
       <div class="mt-6">
-        <h2 class="text-2xl font-young-serif text-gray-800">Nutrition</h2>
-        <p class="text-gray-600 font-young-serif mt-2">
+        <h2
+          class="text-2xl font-young-serif text-gray-800 text-center md:text-left"
+        >
+          Nutrition
+        </h2>
+        <p class="text-gray-600 font-young-serif mt-2 text-center md:text-left">
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table class="w-full mt-4 text-gray-600 font-young-serif">
-          <tr class="border-b">
-            <td class="py-2">Calories</td>
-            <td class="py-2 font-bold text-right">277kcal</td>
-          </tr>
-          <tr class="border-b">
-            <td class="py-2">Carbs</td>
-            <td class="py-2 font-bold text-right">0g</td>
-          </tr>
-          <tr class="border-b">
-            <td class="py-2">Protein</td>
-            <td class="py-2 font-bold text-right">20g</td>
-          </tr>
-          <tr>
-            <td class="py-2">Fat</td>
-            <td class="py-2 font-bold text-right">22g</td>
-          </tr>
-        </table>
+        <div class="overflow-x-auto">
+          <table class="w-full mt-4 text-gray-600 font-young-serif table-auto">
+            <tr class="border-b">
+              <td class="py-2">Calories</td>
+              <td class="py-2 font-bold text-right">632kcal</td>
+            </tr>
+
+            <tr class="border-b">
+              <td class="py-2">Calories</td>
+              <td class="py-2 font-bold text-right">2567kcal</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2">Carbs</td>
+              <td class="py-2 font-bold text-right">0g</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2">Protein</td>
+              <td class="py-2 font-bold text-right">26g</td>
+            </tr>
+            <tr>
+              <td class="py-2">Fat</td>
+              <td class="py-2 font-bold text-right">22g</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2">Calories</td>
+              <td class="py-2 font-bold text-right">634kcal</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2">Carbs</td>
+              <td class="py-2 font-bold text-right">0g</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2">Potato</td>
+              <td class="py-2 font-bold text-right">25g</td>
+            </tr>
+            <tr>
+              <td class="py-2">Fat</td>
+              <td class="py-2 font-bold text-right">22g</td>
+            </tr>
+          </table>
+        </div>
       </div>
+
+      <!-- Footer Section -->
+      <footer class="mt-8 text-center text-gray-500 font-young-serif">
+        <p>&copy; 2025 Simple Recipes. All rights reserved ®.</p>
+        <p>
+          Designed with ❤️ by CHRIZ.
+          <a
+            href="https://tailwindcss.com"
+            class="text-rose-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            ></br>  NA HASSAN AND EDWIN TEACH ME THIS ONE ®  </a
+          >.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
